@@ -1,0 +1,215 @@
+.container_home{
+    width: 100%;
+    height: 210vh;
+	overflow-x: hidden;
+	display: flex;
+
+}
+.img_fnd{
+	background: url("./../../../assets/png/fnd_home.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 55vh ;
+	width:28vw ;
+	position: absolute;
+	z-index: 2;
+	margin-left: 10vw;
+	margin-top: 20vh;
+	transform: rotate(-9deg);
+	opacity: 0.5;
+	filter: blur(100px);
+	  
+}
+.img_fnd2{
+	background: url("./../../../assets/svg/fnd_name.svg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 80vh ;
+	width:50vw ;
+	position: absolute;
+	z-index: 6;
+	margin-left: -13vw;
+	margin-top: 10vh;
+	transform: rotate(25deg);
+	opacity:1;
+}
+.name{
+	height: 16vh;
+	z-index: 7;
+	margin-top: 27vh;
+	margin-left: 9vw;
+}
+.circle{
+    width: 11.8vw;
+    height: 26vh;
+    background: #faf5e4;
+    border-radius: 1000px;
+    z-index: 8;
+    padding: 0;
+    position: absolute;
+    right: 21vw;
+    margin-top: 46vh;
+    background-image:url("./../../../assets/png/new_logo.gif");
+    background-repeat: no-repeat;
+    background-size: 140% 130%;
+    background-position-x: -3.5vw;
+    background-position-y: -2vh;
+    box-shadow: 0 0 15px #6ca3e2;
+	box-shadow: #1983d95e 4px 2px 2px 0px inset, rgb(255, 255, 255) 10px -10px 0px -3px, #1983d93a 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, #1983d92d  20px -20px;
+    opacity: 0.97;
+  }
+  .circle_kero{
+	width: 17.5vw;
+	height: 38vh;
+	border-radius: 1000px;
+	z-index: 7;
+	padding: 0;
+	position: absolute;
+	right: 5vw;
+	top: 48vh;
+	background-image: url("./../../../assets/png/kero_img.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: brightness(140%);
+  }
+  .pikachu{
+	width: 18.5vw;
+	height: 50vh;
+	border-radius: 1000px;
+	z-index: 9;
+	padding: 0;
+	position: absolute;
+	right: 27vw;
+	top: 43vh;
+	background-image: url("./../../../assets/png/pikachu.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: brightness(120%);
+  }
+  .container_details{
+	width:34vw;
+	height:50vh;
+	z-index: 2;
+	top: 35vh;
+	right: 6vw;
+	background-image:url("./../../../assets/png/fondo3.png");
+	background-size: 100% 100%;
+	background-position: center;
+	display: flex;
+	position: absolute;
+	transform: rotate(3deg);
+	opacity: 1;
+  }
+  .subtitle{
+	font-family: 'Pattaya', sans-serif;
+	color: #1983D9;
+	position: absolute;
+	right: 27vw;
+	top:38vh;
+	z-index: 9;
+	
+  }
+  
+.home2{
+	position: absolute;
+	top: 100vh;
+	height: 100vh;
+	width: 100vw;
+	color: #1983D9;
+	font-family: 'Pattaya', sans-serif;
+  }
+  .imgNata{
+	z-index: 11;
+	border-radius: 1000px;
+	height: 36vh;
+	margin-top: 24.5vh;
+	position: absolute;
+	right: 28vw;
+  }
+  .bt_home_2{
+	z-index: 10;
+	position: absolute;
+	height: 75vh ;
+	margin-left:44vw;
+	margin-top: 12vh;
+  }
+  .author_dos{
+	text-align:left;
+	margin-left: 7vw;
+	margin-top: 37vh;
+	font-size: 1.8em;
+	font-weight: 700;
+	position: absolute;
+	z-index: 11;
+	font-family: 'Poppins';
+   
+  }
+  .description{
+	z-index: 12;
+	text-align:left;
+	width: 35vw;
+	height: 20vh;
+	position: absolute;
+	margin-top: 45vh;
+	margin-left: 7vw;
+	font-size: 1em;
+	text-align:justify;
+	text-justify:inter-word;
+	font-weight:550;
+	color: #1B374D;
+	font-family: 'Poppins', sans-serif;
+  }
+  .qr{
+	  height: 18vh;
+  }
+  .cv_containt{
+	  width: 30vw;
+	  height: 30vh;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  display: flex;
+	  right: 4vw;
+	  position: absolute;
+	  margin-top:29.5vh;
+	  z-index: 13;
+	  font-family: 'Poppins';
+	  font-weight: 600;
+  }
+  .cv_containt2{
+	width: 30vw;
+	height: 30vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	right: 4vw;
+	position: absolute;
+	margin-top:57vh;
+	z-index: 14;
+	font-family: 'Poppins';
+	font-weight: 600;
+}
+.skill{
+	height: 15vh;
+	border-radius: 20px;
+}
+.color-text{
+	color: #FFFFFF;
+}
+.position_subtitle{
+	color: #FFFFFF;
+	top:80vh;
+	z-index: 11;
+	right: 16vw;
+	width: 22vw;
+	height: 8vh;
+	background-color:#fc997c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}

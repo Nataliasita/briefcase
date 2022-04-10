@@ -1,0 +1,116 @@
+
+.points {
+	position: absolute;
+	width: 100vw;
+	height: auto;
+	top: 0;
+	left: 0;
+
+}
+
+.points .svg {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+
+
+#point-top-layer{
+	will-change: opacity;
+	animation: fallt 7s infinite;
+}
+@keyframes fallt {
+	
+	0% {
+		opacity: 0.6;
+	  }
+
+	50%{
+		opacity: 0;
+	}  
+	
+	100% {
+		opacity: 0.8;
+	}
+	
+}
+
+#point-bottom-layer{
+	will-change: opacity;
+	animation: fall 8s infinite;
+}
+@keyframes fall {
+	
+	0% {
+		opacity: 0;
+	  }
+
+	50%{
+		opacity: 0.8;
+	}  
+	
+	100% {
+		opacity: 0;
+	}
+	
+}
+.point-bottom-layer2 {
+	will-change: transform;
+	transform: translate(0, 25em);
+	animation: fall2 50s infinite ;
+}
+@keyframes fall2 {
+	
+	100% {
+		transform: translate(105em, -5em);
+	}
+	
+}
+.point-bottom-layer3{
+	will-change: transform;
+	transform: translate(-15em, 35em);
+	animation: fall3 60s infinite ;
+}
+@keyframes fall3 {
+	100% {
+		transform: translate(85em, -10em);
+	}
+	
+}
+.point-bottom-layer4{
+	will-change: transform;
+	transform: translate(-15em, 20em);
+	animation: fall4 50s infinite ;
+}
+@keyframes fall4 {
+	
+	100% {
+		transform: translate(85em, -15em);
+	}
+	
+}
+.point-bottom-layer5{
+	will-change: transform;
+	transform: translate(-55em, 55em);
+	animation: fall5 50s infinite ;
+}
+@keyframes fall5{
+	
+	100% {
+		transform: translate(55em, -35em);
+	}
+	
+}
+
+
+
+
+/* @media (max-width:623px){
+
+.hero{
+   width: 100vw;
+}
+.snow{
+   height: 180vh;
+}
+} */

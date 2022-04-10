@@ -1,0 +1,38 @@
+<app-header (messageEvent)="mode($event)"></app-header>
+<section class="container_contact" [ngClass]="{'colorDark': generic}">
+
+    <nav class="navContact" [ngClass]="{'dark2': generic2}">
+        <div class="log">
+            <a href="https://github.com/Nataliasita"><img class="logo" src="./../../../assets/png/git.png"></a>
+            <a href="https://www.linkedin.com/in/natalia-gonzalez-lizarazo/"><img class="logo" src="./../../../assets/png/link.png"></a>
+            <a href="https://dribbble.com/Nataliasita04"><img class="logo" src="./../../../assets/png/dribble.png"></a>
+        </div>
+    </nav>
+    <p>Puedes encontrarme en mis redes profesionales o un enviarme un mensaje aqui !!!!  </p>
+
+
+    <div class="decorator" *ngIf="decor2">
+        <img class="img_decor1" id="efect_blur" src="assets/png/fondo4.png" alt="">
+        <img class="img_decor2" src="assets/png/bt_home2.png" alt="">
+    </div>
+    <div class="decorator" *ngIf="decor1">
+        <img class="img_decor1" src="assets/png/fondo3.png" alt="">
+        <img class="img_decor2" src="assets/png/bt_home2.png" alt="">
+    </div>
+
+
+     <form action="" class="formContact" [formGroup]="prueba2" autocomplete="on" >
+         <span>Nombre</span>
+             <input id="name" type="text" formControlName="name">
+        
+         <span>Email</span>        
+             <input id="email" type="email" formControlName="email">
+
+         <span>Mensaje</span>
+        <textarea name="" id="" cols="" rows="5" formControlName="message"></textarea>
+            <button type="submit" class="btn_message">Enviar</button>
+    </form>
+    
+
+</section>
+

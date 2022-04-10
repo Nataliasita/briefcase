@@ -1,0 +1,181 @@
+.container_works{
+    width: 100%;
+    height: 450vh;
+    display: flex;
+    
+}
+.title_proyect{
+    width: 600px;
+    height: 38vh;
+    will-change: transform;
+	transform: translateX(-550px);
+	animation: fallTitle 8s 1 linear;
+    z-index: 9;
+}
+@keyframes fallTitle {
+	
+	25% {
+		transform: translateX(0);
+	}
+    75%{
+        transform: translateX(0);
+    }
+
+}
+.titleSection{
+    font-size: 2.5em;
+    text-align: left;
+    margin: 15vh 0 0 0;
+    padding: 2.5vh 0 2.5vh 10vw;
+    position: absolute;
+    font-weight: 600;
+    width: 37vw;
+    color: #eeeeee;
+    background:linear-gradient(227.91deg, #60A9E5  0%, #174f7a 120%);
+    text-shadow: -2px 2px 3px rgba(0,0,0,0.4);
+    opacity: 0.95;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: 'Georama', cursive;
+}
+.detail_title{
+  z-index: 3;
+  opacity: 0.85;
+  background-size: 100% 100%;
+  height: 20vh;
+  position: absolute;
+  margin-left: 28vw;
+  margin-top: 8vh;
+  transform: rotate(-5deg);
+}
+
+.welcome{
+    width: 100vw;
+    height: 35vh;
+    z-index: 7;
+    position: absolute;
+    display: flex;
+    margin-top: 27vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#204058;
+    /* background-color:#6998ab; */
+    text-align: justify;
+    padding: 0 15%;
+}
+.title_general{
+    font-family: 'Lavishly Yours', cursive;
+    font-size: 3.3em;
+    /* font-weight: 500; */
+}
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+#title2{
+    font-size: 0.7em;
+}
+.container_allproyects{
+    width: 100vw;
+    height: fit-content;
+    /* background-color: #174f7a; */
+    /* background-color: #999b9c; */
+    display: grid;
+    margin-top: 65vh;
+    z-index: 10;
+    position: absolute;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8vh;
+    padding: 5% 14%;
+    overflow-x: hidden;
+}
+.proyect{
+    width: 65vw;
+    height: 50vh;
+    display: flex;
+    /* background-color: #174f7a; */
+    background-color:#6998ab; 
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: row;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+figure:nth-child(1){
+    margin-left: -14vw;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+figure:nth-child(2){
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 30%;
+}
+figure:nth-child(3){
+    margin-left: -14vw;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+figure:nth-child(4){
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 30%;
+}
+figure:nth-child(5){
+    margin-left: -14vw;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+figure:nth-child(6){
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-left:30%;
+}
+
+.img_proyect{
+    border-radius: 15px;
+    width: 22vw;
+    height: 28vh;
+    margin-left: 4vw;
+}
+.description_proyect{
+    width: 30vw;
+    font-size: 0.85em;
+    margin-left: 4vw;
+    text-align: justify;
+}
+a .img_proyect:hover{
+    background-color: blue;
+}
+.img_proyect:hover{
+    margin-top: -2vh;
+    box-shadow: 0 0 15px 5px rgba(0, 131, 232, 0.4);
+}
+
+h5{
+    font-weight: 600;
+}
+p{
+    font-weight: 550;
+}
+#tecnologies{
+    font-size: 0.8em;
+}
+
+.gray_dark{
+    background-color: #dddddd;
+    width: 65vw;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: #1B374D;
+}
+
+.color-text{
+    color: #ffffff;
+}
+.fnd{
+    background-color:#00164F;
+}
+
+

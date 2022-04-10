@@ -1,0 +1,31 @@
+<app-header (messageEvent)="mode($event)"></app-header>
+<app-animation *ngIf="atributesLigth"></app-animation>
+<app-snow *ngIf="atributesDark"></app-snow>
+   <section class="container_home">
+     
+         <img class="name" src="./../../../assets/png/name6.png" alt="">
+         <div class="img_fnd"></div>
+         <div *ngIf="atributesLigth" class="img_fnd2"></div>
+         <div *ngIf="atributesLigth" class="container_details">  </div>
+            <h3 class="subtitle" [ngClass]="{'position_subtitle': generic2}" >Design and code</h3>
+         <div class="circle"></div>
+         <div class="circle_kero"></div>
+         <div class="pikachu"></div>
+      
+            <div class="home2">
+               <img class="imgNata" src="./../../../assets/png/foto.jpg" alt="">
+                  <img class="bt_home_2" src="./../../../assets/png/bt_home2.png" alt="">
+                     <h3 class="author_dos" [ngClass]="{'color-text': generic}">Acerca de mi...</h3>
+                        <p class="description" [ngClass]="{'color-text': generic}">Soy Front End Developer con una conexión especial al asombroso mundo del diseño UX/UI, con formación profesional en Administración de empresas de la cual obtuve grandes aprendizajes gracias a la implementación de ideas de negocio desde cero. A lo largo de mi camino profesional siempre he tenido como prioridad contribuir al bienestar y satisfacción de los usuarios. por ello siento gran pasion  por la construcción de productos digitales únicos y generar experiencias de impacto a cada uno de sus futuros usuarios.</p>
+                       
+                        <div class="cv_containt">
+                           <img class="qr" src="./../../../assets/png/cv.png" alt="">
+                           <a href="assets/CVNATALIAGONZALEZ.pdf" download="CVNATALIAGONZALEZ.pdf" class="pt-2 text-decoration-none" [ngClass]="{'color-text': generic}">Curriculum</a>
+                        </div>
+                        <div class="cv_containt2">
+                           <img class="skill" src="./../../../assets/png/skill2.png" alt="">
+                           <span [ngClass]="{'color-text': generic}">Skills</span>
+                        </div>
+            </div>
+   </section>
+<app-footer></app-footer>

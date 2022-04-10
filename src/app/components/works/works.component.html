@@ -1,0 +1,28 @@
+<app-header (messageEvent)="mode($event)"></app-header>
+<app-animaligth *ngIf="atributesLigth"></app-animaligth>
+<app-animationdark *ngIf="atributesDark"></app-animationdark>
+<section class="container_works">
+
+    <div class="title_proyect">
+        <img src="./../../../assets/png/bt_home2.png" class="detail_title" alt="">
+        <h3 class="titleSection">Mis proyectos</h3>
+    </div>
+    <div class="welcome" [ngClass]="{'color-text': generic}">
+        <h1 class="title_general">Welcome | Bienvenue | <span id="title2"> 歡迎 | ようこそ </span> dear visitor</h1>
+        <h3 class="subtitle">Como apasionada por la tecnologia constantemente sigo aprendiendo nuevas herramientas y enfoques para ser cada vez más cercana al usuario, buscando ofrecerle una experiencia accesible e innovadora dentro del mundo de la transformación digital y creacion de productos digitales. A continuación, encontraras algunos de mis proyectos los cuales fueron construidos con varios lenguajes de programacion, apoyo de librerias y como framework Angular.</h3>
+    </div>
+
+    <div class="container_allproyects">
+        <figure class="proyect" *ngFor="let proyect of proyects" [ngClass]="{'gray_dark': generic3}">
+            <a class="prueba" href="{{proyect.href}}"><img class="img_proyect" src="{{proyect.image}}" alt=""></a>
+            <div class="description_proyect">
+                <h5>{{proyect.name}}</h5>
+                <p>{{proyect.description1}}</p>
+                <p>{{proyect.description2}}</p>
+                <span id="tecnologies"> Tecnologias utilizadas: {{proyect.tecnologias}}</span>
+             </div>
+        </figure>
+    </div>
+</section>
+    <app-items-carrusel ></app-items-carrusel>
+<app-footer></app-footer>

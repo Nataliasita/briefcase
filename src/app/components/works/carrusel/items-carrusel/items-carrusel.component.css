@@ -1,0 +1,72 @@
+.contenedor_animation{
+    background-color: rgb(230, 230, 230);
+    width: 100vw;
+    height: 55vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    z-index: 5;
+    overflow: hidden;
+}
+.car-is{
+    /* background-color: coral; */
+    width: 105vw;
+    height: 30vh;
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transform: translateX( 250px);
+	animation: fallcar 35s infinite alternate;
+}
+
+@keyframes fallcar {
+	
+	100% {
+		transform: translateX(-175px);
+	}
+	
+}
+.item1{
+    width: 15vw;
+    background-color: #AFD0D9;
+    height: 30vh;
+    margin-right:-2vw ;
+    justify-content: center;
+    display: flex;
+    border-radius: 500px;
+    clip-path: polygon(15% 14%, 83% 3%, 82% 23%, 100% 78%, 49% 100%, 30% 82%, 3% 75%, 19% 39%);
+}
+.item2{
+    width: 23vw;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item3{
+    width: 23vw;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item4{
+    width: 23vw;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+img{
+    height: 30vh;
+    border-radius: 20px;
+    opacity: 1;
+    
+}
+h4{
+    color: #1B374D;
+    margin-bottom: 6vh;
+    margin-left: 4vw;
+    align-self: start;
+    font-weight: 600;
+}
+.dark{
+    background: #00164F;
+}

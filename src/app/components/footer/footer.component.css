@@ -1,0 +1,47 @@
+.footer{
+    width: 100vw;
+    z-index: 16;
+    height: 16vh;
+    background:#1B374D;
+    margin-bottom: 0;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+
+}
+
+.logo_footer{
+    height: 7.5vh;
+    margin-right:1.8vw;
+    margin-top: 3vh;
+    padding:0.5em;
+  }
+  .logo_footer:hover{
+    background:#10202c; 
+    border-radius:10px;
+    padding:0.5em;
+    border-radius: 1000px;
+  }
+  .log{
+    display: flex;
+    width: 22vw;
+    top: 2.8vh;
+    margin-right: 5vw;
+    align-items: center;
+    justify-content:space-evenly;
+  }
+  #derechos{
+    margin: 4vh 0 0 4vw;
+    height:2.3vh;
+  }
+  #name{
+    margin: 4vh 0 0 1.3vw;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size:1em;
+  }
+  .rights{
+      width: 25vw;
+      display: flex;
+      align-items: center;
+  }

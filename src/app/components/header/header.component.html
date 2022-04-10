@@ -1,0 +1,19 @@
+<nav class="header" [ngClass]="{'out_fixed': positionHeader}"> 
+    <div class="contain-tog" *ngIf="toogleView">
+        <div class="icon_img">
+            <img class="iconT" id="icon1" src="assets/png/dia.png" alt="" *ngIf="icon_dia">
+            <img class="iconT" id="icon2" src="assets/png/noche.png" alt="" *ngIf="icon_noche">
+        </div>
+        <div class="btn_toggle">
+            <label class="switch">
+                <input type="checkbox" (change)="fieldsChange($event)">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="options" [ngClass]="{'positionContact': positionOption}">
+        <a  [routerLink]="['/home']" [ngClass]="{'color-text': generic , 'border_static1':statushome}" >Home</a>
+        <a id="work"  [routerLink]="['/work']" [ngClass]="{'color-text': generic , 'border_static1':statuswork}">Work</a>
+        <a [routerLink]="['/contact']" [ngClass]="{'color-text': generic , 'border_static2': statuscontact}">Contact</a>
+    </div>
+</nav>

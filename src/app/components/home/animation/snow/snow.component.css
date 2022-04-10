@@ -1,0 +1,68 @@
+
+.hero{
+    height: 212vh;
+    width: 100vw;
+    background: #faf5e4;
+    display: flex;
+    color: #ebebeb;
+    background-image: linear-gradient(230deg,#000000, #060125, #000435,#121230,#131630, #060e1d, #00012b);
+    background-size: 500%;
+    animation: parfait1 50s infinite;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+  }
+  @keyframes parfait1{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+}
+
+.snow {
+	position: absolute;
+	width: 100vw;
+	height: auto;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+    position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+@media (max-width:623px){
+
+.hero{
+   width: 100vw;
+}
+.snow{
+   height: 180vh;
+}
+}
