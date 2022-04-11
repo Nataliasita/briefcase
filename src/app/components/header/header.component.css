@@ -106,7 +106,7 @@
     height: 8vh;
   }
   .icon_img{
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 4vw;
     align-items: center;

@@ -1,9 +1,8 @@
 .container_home{
-    width: 100%;
+    width: 100vw;
     height: 210vh;
 	overflow-x: hidden;
 	display: flex;
-
 }
 .img_fnd{
 	background: url("./../../../assets/png/fnd_home.png");

@@ -8,7 +8,7 @@
             <a href="https://dribbble.com/Nataliasita04"><img class="logo" src="./../../../assets/png/dribble.png"></a>
         </div>
     </nav>
-    <p>Puedes encontrarme en mis redes profesionales o un enviarme un mensaje aqui !!!!  </p>
+    <p>Puedes encontrarme en mis redes profesionales o enviarme un mensaje, recibiras una pronta respuesta.  </p>
 
 
     <div class="decorator" *ngIf="decor2">
@@ -21,18 +21,44 @@
     </div>
 
 
-     <form action="" class="formContact" [formGroup]="prueba2" autocomplete="on" >
+     <form action="" class="formContact" [formGroup]="sendForm" autocomplete="on" (ngSubmit)="addMessage()">
          <span>Nombre</span>
-             <input id="name" type="text" formControlName="name">
-        
+             <input id="name" type="text" formControlName="name" required >
+             <div class="invalid">
+                <p  class="messageError"
+                    *ngIf="sendForm.controls['name'].hasError('required') && (sendForm.controls['name'].dirty || sendForm.controls['name'].touched)">
+                    Nombre requerido </p>
+                <p class="messageError"
+                    *ngIf="sendForm.controls['name'].invalid && !sendForm.controls['name'].hasError('required')">
+                    El nombre debe tener de 3 a 30 letras</p>
+            </div>
          <span>Email</span>        
-             <input id="email" type="email" formControlName="email">
-
+             <input id="email" type="email" formControlName="email" required>
+             <div class="invalid">
+                <p class="messageError"
+                    *ngIf="sendForm.controls['email'].hasError('required') && (sendForm.controls['email'].dirty || sendForm.controls['email'].touched)">
+                    Correo electronico requerido.</p>
+                <p class="messageError"
+                    *ngIf="sendForm.controls['email'].hasError('pattern') && sendForm.controls['email'].hasError('email')">
+                    Correo electronico invalido</p>
+            </div>
          <span>Mensaje</span>
-        <textarea name="" id="" cols="" rows="5" formControlName="message"></textarea>
-            <button type="submit" class="btn_message">Enviar</button>
+        <textarea name="" id="" cols="" rows="5" formControlName="message"required placeholder=" Ingresa tu mensaje"></textarea>
+        <div class="invalid">
+            <p class="messageError"
+                *ngIf="sendForm.controls['message']?.invalid && !sendForm.controls['message'].hasError('required')">
+                Debe tener de 5 a 100 letras.</p>
+        </div>
+            <button type="submit" [disabled]="sendForm.invalid" class="btn_message">Enviar</button>
     </form>
     
+    <div class="confirmation" *ngIf="modal">
+        <img class="check" src="assets/png/check.png" alt="">
+        <span>Tu mensaje ha sido enviado con exito</span>
+    </div>
+
+
+
 
 </section>
 

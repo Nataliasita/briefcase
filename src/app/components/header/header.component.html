@@ -12,8 +12,8 @@
         </div>
     </div>
     <div class="options" [ngClass]="{'positionContact': positionOption}">
-        <a  [routerLink]="['/home']" [ngClass]="{'color-text': generic , 'border_static1':statushome}" >Home</a>
-        <a id="work"  [routerLink]="['/work']" [ngClass]="{'color-text': generic , 'border_static1':statuswork}">Work</a>
-        <a [routerLink]="['/contact']" [ngClass]="{'color-text': generic , 'border_static2': statuscontact}">Contact</a>
+        <a id="home" [routerLink]="['/home']" href="#home" [ngClass]="{'color-text': generic , 'border_static1':statushome}" >Home</a>
+        <a id="work" href="#work"  [routerLink]="['/work']" [ngClass]="{'color-text': generic , 'border_static1':statuswork}">Work</a>
+        <a id="contact" [routerLink]="['/contact']" href="#contact" [ngClass]="{'color-text': generic , 'border_static2': statuscontact}">Contact</a>
     </div>
 </nav>

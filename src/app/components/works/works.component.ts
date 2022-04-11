@@ -32,7 +32,7 @@ export class WorksComponent implements OnInit {
       image:'./../../../assets/png/space.png'
     },
      { id:3, name:'Data lovers',
-      href:'https://romantic-leavitt-854494.netlify.app/',
+      href:'https://cranky-goldstine-ebf128.netlify.app/',
       description1:'Diseño y construccion pagina web catalogo SPA (single page application) con manejo de base de datos Juego Pokemon Go.',
       description2:'',
       tecnologias:'html, js, css, blender',

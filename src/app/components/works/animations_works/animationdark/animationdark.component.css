@@ -1,6 +1,6 @@
 .work_area{
     width: 100vw;
-    height: 452vh;
+    height: 439vh;
     background-image: linear-gradient(230deg, #000000, #04001c, #080918,#121531, #060e1d, #00001d);
     background-size: 500%;
     animation: parfait 50s infinite;
@@ -89,8 +89,8 @@
   }
   #dec8{
     height: 15vh;
-    margin-top: 435vh;
-    right: 47vw;
+    margin-top: 420vh;
+    right: 60vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -145,7 +145,7 @@
   }
   #dec14{
     height: 13vh;
-    margin-top: 430vh;
+    margin-top: 310vh;
     right: 8vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
