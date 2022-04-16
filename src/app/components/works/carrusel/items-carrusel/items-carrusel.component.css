@@ -12,20 +12,20 @@
 }
 .car-is{
     /* background-color: coral; */
-    width: 105vw;
+    width: 108vw;
     height: 30vh;
     justify-content: space-between;
     display: flex;
     padding: 0;
     margin: 0;
     transform: translateX( 250px);
-	animation: fallcar 35s infinite alternate;
+	animation: fallcar 30s infinite alternate;
 }
 
 @keyframes fallcar {
 	
 	100% {
-		transform: translateX(-175px);
+		transform: translateX(-140px);
 	}
 	
 }
@@ -48,17 +48,22 @@
     width: 23vw;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 1.3vw;
 }
 .item4{
     width: 23vw;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 1.3vw;
+}
+.item5{
+    /* background-color: brown; */
+    margin-left: 1.5vw;
 }
 img{
     height: 30vh;
-    border-radius: 20px;
+    border-radius: 17px;
     opacity: 1;
-    
 }
 h4{
     color: #1B374D;
