@@ -140,8 +140,7 @@ textarea{
 }
 .btn_message:hover{
   background-color:#4fa5e7;
-
- 
+  cursor: pointer;
 }
 input.ng-dirty.ng-valid {
   border: 1px solid #5e8feb;

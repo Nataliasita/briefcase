@@ -1,6 +1,6 @@
 .work_area{
     width: 100vw;
-    height: 439vh;
+    height: 500vh;
     background-image: linear-gradient(230deg, #000000, #04001c, #080918,#121531, #060e1d, #00001d);
     background-size: 500%;
     animation: parfait 50s infinite;
@@ -151,5 +151,25 @@
     background-repeat: no-repeat;
     position: absolute;
     opacity: 0.8;
+    width: 6vw;
+  }
+  #dec15{
+    height: 13vh;
+    margin-top: 460vh;
+    right: 18vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 1000px;
+    width: 6vw;
+  }
+  #dec16{
+    height: 13vh;
+    margin-top: 440vh;
+    right: 8vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 1000px;
     width: 6vw;
   }

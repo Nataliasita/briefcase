@@ -16,7 +16,7 @@
         <figure class="proyect" *ngFor="let proyect of proyects" [ngClass]="{'gray_dark': generic3}">
             <a class="prueba" href="{{proyect.href}}"><img class="img_proyect" src="{{proyect.image}}" alt=""></a>
             <div class="description_proyect">
-                <h5>{{proyect.name}}</h5>
+                <h5 class="proyect_title fw-bold">{{proyect.name}}</h5>
                 <p>{{proyect.description1}}</p>
                 <p>{{proyect.description2}}</p>
                 <span id="tecnologies"> Tecnologias utilizadas: {{proyect.tecnologias}}</span>
