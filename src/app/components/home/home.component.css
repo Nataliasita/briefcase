@@ -15,47 +15,69 @@
 	margin-left: 10vw;
 	margin-top: 20vh;
 	transform: rotate(-9deg);
-	opacity: 0.5;
+	opacity: 0.4;
 	filter: blur(100px);
-	  
-}
-.img_fnd2{
-	background: url("./../../../assets/svg/fnd_name.svg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 80vh ;
-	width:50vw ;
-	position: absolute;
-	z-index: 6;
-	margin-left: -13vw;
-	margin-top: 10vh;
-	transform: rotate(25deg);
-	opacity:0.8;
 }
 .name{
-	height: 16vh;
+	width: auto;
+	height: 20vh;
 	z-index: 7;
-	margin-top: 27vh;
+	margin-top: 30vh;
 	margin-left: 9vw;
+	display: flex;
 }
+.containerName{
+	height: auto;
+	width: auto;
+	display: flex;
+	align-items: center;
+}
+.authorName{
+	display: block;
+	white-space: nowrap;
+	color:#5584AC;
+	border-right: 5px solid #5097d1;
+	width: 16ch;
+	font-size: 2.3em;
+	text-shadow: rgb(103, 194, 255) 0.05em 0.05em 0.05em;
+	animation: writing 5s steps(16),
+			   visual 0.5s infinite	alternate;
+	overflow: hidden;
+	font-family: game regular;
+}
+
+.name_title{
+	color: #ffffff;
+	font-family: game outline regular;
+	border-right: 5px solid #ffffff;
+}
+
+@keyframes writing {
+	from{
+		width: 0;
+	}
+}
+
+@keyframes visual {
+	70%{
+		border-color: transparent;
+	}
+}
+
 .circle{
     width: 11.8vw;
     height: 26vh;
-    background: #faf5e4;
-    border-radius: 1000px;
     z-index: 8;
     padding: 0;
     position: absolute;
-    right: 21vw;
+    right: 22.5vw;
     margin-top: 46vh;
-    background-image:url("./../../../assets/png/new_logo.gif");
+    background-image:url("./../../../assets/png/Sakaine_version_final.png");
     background-repeat: no-repeat;
-    background-size: 140% 130%;
-    background-position-x: -3.5vw;
-    background-position-y: -2vh;
-    box-shadow: 0 0 15px #6ca3e2;
-	box-shadow: #1983d95e 4px 2px 2px 0px inset, rgb(255, 255, 255) 10px -10px 0px -3px, #1983d93a 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, #1983d92d  20px -20px;
+    background-size: 110% 110%;
+    background-position:center;
     opacity: 0.97;
+	border-radius: 1000px;
   }
   .circle_kero{
 	width: 17.5vw;
@@ -79,7 +101,7 @@
 	z-index: 9;
 	padding: 0;
 	position: absolute;
-	right: 27vw;
+	right: 29vw;
 	top: 43vh;
 	background-image: url("./../../../assets/png/pikachu.gif");
 	background-repeat: no-repeat;
@@ -102,13 +124,14 @@
 	opacity: 1;
   }
   .subtitle{
-	font-family: 'Pattaya', sans-serif;
-	color: #1983D9;
+	font-family: stampy regular, sans-serif;
+	color: #5584AC;
 	position: absolute;
-	right: 27vw;
-	top:38vh;
+	right: 15vw;
+	top:35vh;
 	z-index: 9;
-	
+	padding-top: 2vh;
+	padding-bottom: 1vh;
   }
   
 .home2{
@@ -116,22 +139,22 @@
 	top: 100vh;
 	height: 100vh;
 	width: 100vw;
-	color: #1983D9;
+	color: #5584AC;
 	font-family: 'Pattaya', sans-serif;
   }
   .imgNata{
 	z-index: 11;
 	border-radius: 1000px;
-	height: 36vh;
+	height: 34vh;
 	margin-top: 24.5vh;
 	position: absolute;
-	right: 28vw;
+	right: 31vw;
   }
   .bt_home_2{
 	z-index: 10;
 	position: absolute;
 	height: 75vh ;
-	margin-left:44vw;
+	margin-left:42vw;
 	margin-top: 12vh;
   }
   .author_dos{
@@ -176,6 +199,7 @@
 	  z-index: 13;
 	  font-family: 'Poppins';
 	  font-weight: 600;
+	  color: #5584AC;
   }
   .cv_containt2{
 	width: 30vw;
@@ -190,6 +214,7 @@
 	z-index: 14;
 	font-family: 'Poppins';
 	font-weight: 600;
+	color: #5584AC;
 }
 .skill{
 	height: 15vh;
@@ -202,13 +227,20 @@
 	color: #FFFFFF;
 	top:80vh;
 	z-index: 11;
-	right: 16vw;
-	width: 22vw;
-	height: 8vh;
+	right: 14vw;
+	width: 28vw;
+	height: auto;
 	background-color:#fc997c;
 	display: flex;
 	align-items: center;
+	text-align: center;
 	justify-content: center;
 	border-radius: 100px;
-	clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+	clip-path: polygon(0% 13%, 10% 15%, 13% 0%, 85% 0%, 88% 13%, 100% 13%, 100% 85%, 88% 85%, 85% 100%, 13% 100%, 10% 85%, 0% 85%);
+	box-shadow: rgba(0, 0, 0, 0.04) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.04) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.04) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.04) 0px 4px 2px, rgba(0, 0, 0, 0.04) 0px 8px 4px, rgba(0, 0, 0, 0.04) 0px 16px 8px, rgba(0, 0, 0, 0.04) 0px 32px 16px;
 }
+a{
+	color: #5584AC;
+}
+
+

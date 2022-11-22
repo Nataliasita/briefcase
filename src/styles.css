@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "rosalinda regular";
+  src: url(./assets/fonts/font-rosa/Rosalinda-Berlinata.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "game regular";
+  src: url(./assets/fonts/font-game/Game-Played.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "game outline regular";
+  src: url(./assets/fonts/font-game/Game-Played-Outline.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "sub outline regular";
+  src: url(./assets/fonts/font-fill/Fill-Me-With-Color.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "stampy regular";
+  src: url(./assets/fonts/font-stauchs/StampyLight.ttf) format("opentype");
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,3 +34,5 @@
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
   }
+
+

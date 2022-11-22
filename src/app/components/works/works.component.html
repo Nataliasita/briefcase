@@ -9,10 +9,26 @@
     </div>
     <div class="welcome" [ngClass]="{'color-text': generic}">
         <h1 class="title_general">Welcome | Bienvenue | <span id="title2"> 歡迎 | ようこそ </span> dear visitor</h1>
-        <h3 class="subtitle">Como apasionada por la tecnologia constantemente sigo aprendiendo nuevas herramientas y enfoques para ser cada vez más cercana al usuario, buscando ofrecerle una experiencia accesible e innovadora dentro del mundo de la transformación digital y creacion de productos digitales. A continuación, encontraras algunos de mis proyectos los cuales fueron construidos con varios lenguajes de programacion, apoyo de librerias y como framework Angular.</h3>
+        <h3 class="subtitle">Como apasionada por la tecnologia constantemente sigo aprendiendo nuevas herramientas buscando ofrecerle a los usuarios una experiencia accesible e innovadora dentro del mundo de los videojuegos y la transformación digital a traves de la creacion de productos. A continuación, encontraras algunos de mis proyectos los cuales fueron construidos con el motor de videojuegos multiplataforma Unity, modelado en 3D Blender, framework Angular y lenguajes de programacion como C# , Js, Ts, Html, Css.</h3>
     </div>
 
-    <div class="container_allproyects">
+    <div class="container_buttons">
+        <button type="button" class="subclassProduct" (click)="changeModelings()">Modelados 3D</button>
+        <button type="button" class="subclassProduct" (click)="changemyGames()">Juegos</button>
+        <button type="button" class="subclassProduct" (click)="changemoreProducts()">Mas productos</button>
+    </div>
+
+    <div class="container_modelings" *ngIf="allModelings">
+        <app-items-carrusel ></app-items-carrusel>
+
+    </div>
+
+    <div class="container_games" *ngIf="allGames">
+       
+        <p>hola</p>
+    </div>
+
+    <div class="container_allproyects" *ngIf="moreProducts">
         <figure class="proyect" *ngFor="let proyect of proyects" [ngClass]="{'gray_dark': generic3}">
             <a class="prueba" href="{{proyect.href}}"><img class="img_proyect" src="{{proyect.image}}" alt=""></a>
             <div class="description_proyect">
@@ -24,5 +40,5 @@
         </figure>
     </div>
 </section>
-    <app-items-carrusel ></app-items-carrusel>
+    
 <app-footer></app-footer>

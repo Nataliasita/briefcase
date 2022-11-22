@@ -19,6 +19,8 @@ export class HeaderComponent implements OnInit {
   toogleView=true;
   positionOption=false;
 
+  valueIni:boolean=true;
+
   @Output() messageEvent = new EventEmitter<boolean>();
 
   ngOnInit(): void {
@@ -31,7 +33,6 @@ export class HeaderComponent implements OnInit {
   fieldsChange(values:any):void {
     // console.log(values.currentTarget.checked);
     let toogle= values.currentTarget.checked
-    console.log(toogle,'prasdf')
     this.messageEvent.emit(toogle)
 
     if(toogle===true){
@@ -68,6 +69,8 @@ export class HeaderComponent implements OnInit {
   changeWork(){
     if(this.router.url==='/work'){
       this.statuswork=true;
+      this.positionHeader=true;
+      window.scrollTo(0,0)
     }
   }
 

@@ -1,25 +1,53 @@
 <div class="contenedor_animation">
 
-    <h4>Animaciones y modelados 3D en blender</h4>
-  
-        <div class="car-is">
-          <div class="item1">
-            <img src="assets/png/pikachu.gif" >
-          </div>
-          <div class="item5">
-            <img src="assets/png/icecream.png" >
-          </div>
-          <div class="item2">
-            <img src="assets/png/blue.gif" >
-          </div>
-          <div class="item3">
-            <img  src="assets/png/yellow.gif">
-          </div>
-          <div class="item4">
-            <img  src="assets/png/orange.gif" >
-          </div>
-        </div>
-      
-  
+    <h4 class="titlePrincipal">Animaciones y modelados 3D en blender</h4>
+    <img class="icon-click" src="assets/png/click.png" alt="icon-click">
+        <div class="carrusel">
+          <input type="radio" name="carrusel3d" id="radio1" checked (click)="viewModel('rad1')">
+          <input type="radio" name="carrusel3d" id="radio2" (click)="viewModel('rad2')">
+          <input type="radio" name="carrusel3d" id="radio3" (click)="viewModel('rad3')">
+          <input type="radio" name="carrusel3d" id="radio4" (click)="viewModel('rad4')">
+          <input type="radio" name="carrusel3d" id="radio5" (click)="viewModel('rad5')">
+          <input type="radio" name="carrusel3d" id="radio6" (click)="viewModel('rad6')">
+          <input type="radio" name="carrusel3d" id="radio7" (click)="viewModel('rad7')">
+          <input type="radio" name="carrusel3d" id="radio8" (click)="viewModel('rad8')">
+          <input type="radio" name="carrusel3d" id="radio9" (click)="viewModel('rad9')">
 
-</div>
+          <label for="radio1" id="img1">
+            <img class="item1" src="assets/png-models/chimuelo.png" >
+          </label>
+          <label for="radio2" id="img2">
+            <img class="item2" src="assets/png-models/angel.png" >
+          </label>
+          <label for="radio3" id="img3">
+            <img class="item3" src="assets/png-models/stich.png" >
+          </label>
+          <label for="radio4" id="img4">
+            <img class="item4" src="assets/png-models/pika.png" >
+          </label>
+          <label for="radio5" id="img5">
+            <img class="item5" src="assets/png-models/dino3.png" >
+          </label>
+          <label for="radio6" id="img6">
+            <img class="item6" src="assets/png-models/harry-image.png" >
+          </label>
+          <label for="radio7" id="img7">
+            <img class="item7" src="assets/png-models/princess.png" >
+          </label>
+          <label for="radio8" id="img8">
+            <img class="item8" src="assets/png-models/imagen-jirly.png" >
+          </label>
+          <label for="radio9" id="img9">
+            <img class="item9" src="assets/png-models/kero-image.png" >
+          </label> 
+       </div>
+
+       <div class="bigViewModel">
+          <video *ngIf="defaulVideo" width="400"  height="400" src="assets/videos/dragon.mp4" #movieplayer muted controls loop autoplay></video>
+          <span *ngIf="defaulVideo" class="titleVideo">Chimuelo</span>
+          <video *ngIf="selectVideo" width="400"  height="400" src="{{imageVideo}}" #movieplayer muted controls loop autoplay></video>
+          <span *ngIf="selectVideo" class="titleVideo">{{videoName}}</span>
+       </div>
+
+         
+      </div>

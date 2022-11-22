@@ -14,6 +14,9 @@ export class WorksComponent implements OnInit {
   generic2=false;
   generic3=false;
   generic4=false;
+  moreProducts:boolean=false;
+  allModelings:boolean=true;
+  allGames:boolean=false;
   
 
   proyects=[
@@ -31,13 +34,13 @@ export class WorksComponent implements OnInit {
       tecnologias:'kaboom.js , css, html',
       image:'./../../../assets/png/space.png'
     },
-    { id:3, name:'Byte Adventure Flavored',
-      href:'https://nataliasita04.itch.io/byte-adventure-flavored',
-      description1:'Pixel Game Jam',
-      description2:'Diseño y construccion de juego con tematica basada en la Coca-cola byte',
-      tecnologias:'unity, c#, modelado en blender',
-      image:'./../../../assets/png/bite_of.png'
-    },
+    // { id:3, name:'Byte Adventure Flavored',
+    //   href:'https://nataliasita04.itch.io/byte-adventure-flavored',
+    //   description1:'Pixel Game Jam',
+    //   description2:'Diseño y construccion de juego con tematica basada en la Coca-cola byte',
+    //   tecnologias:'unity, c#, modelado en blender',
+    //   image:'./../../../assets/png/bite_of.png'
+    // },
      { id:4, name:'Data Lovers',
       href:'https://cranky-goldstine-ebf128.netlify.app/',
       description1:'Diseño y construccion pagina web catalogo SPA (single page application) con manejo de base de datos Juego Pokemon Go.',
@@ -94,6 +97,36 @@ export class WorksComponent implements OnInit {
 
     }
 
+  }
+
+  changemoreProducts() {
+    this.moreProducts=true;
+    window.scrollTo(0,360)
+    if(this.moreProducts==true)
+    {
+      this.allModelings=false;
+      this.allGames=false;
+    }
+  }
+
+  changeModelings(){
+    this.allModelings=true;
+    window.scrollTo(0,1010)
+    if(this.allModelings==true)
+    {
+      this.allGames=false;
+      this.moreProducts=false;
+    }
+  }
+  changemyGames(){
+    this.allGames=true;
+    window.scrollTo(0,360)
+
+    if(this.allGames==true)
+    {
+      this.allModelings=false;
+      this.moreProducts=false;
+    }
   }
 
 
