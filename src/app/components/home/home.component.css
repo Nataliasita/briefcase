@@ -141,7 +141,7 @@
 	padding-top: 2vh;
 	padding-bottom: 1vh;
   }
-  
+
 .home2{
 	position: absolute;
 	top: 100vh;
@@ -174,7 +174,7 @@
 	position: absolute;
 	z-index: 11;
 	font-family: 'Poppins';
-   
+
   }
   .description{
 	z-index: 12;
@@ -232,20 +232,22 @@
 	color: #FFFFFF;
 }
 .position_subtitle{
-	color: #FFFFFF;
+	color: #1B374D;
+	/* text-shadow: #015697 0.05px 0.05px; */
 	top:80vh;
 	z-index: 11;
 	right: 14vw;
 	width: 28vw;
 	height: auto;
-	background-color:#fc997c;
+	/* background-color:#fc997c; */
+	background: #e7e7e7;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
 	border-radius: 100px;
 	clip-path: polygon(0% 13%, 10% 15%, 13% 0%, 85% 0%, 88% 13%, 100% 13%, 100% 85%, 88% 85%, 85% 100%, 13% 100%, 10% 85%, 0% 85%);
-	box-shadow: rgba(0, 0, 0, 0.04) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.04) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.04) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.04) 0px 4px 2px, rgba(0, 0, 0, 0.04) 0px 8px 4px, rgba(0, 0, 0, 0.04) 0px 16px 8px, rgba(0, 0, 0, 0.04) 0px 32px 16px;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 a{
 	color: #5584AC;

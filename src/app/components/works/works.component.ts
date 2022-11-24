@@ -15,8 +15,8 @@ export class WorksComponent implements OnInit {
   generic3=false;
   generic4=false;
   moreProducts:boolean=false;
-  allModelings:boolean=true;
-  allGames:boolean=false;
+  allModelings:boolean=false;
+  allGames:boolean=true;
   valueChangeTitle:boolean=false;
   changeIconCarrusel1=true;
   changeIconCarrusel2=false;
@@ -83,7 +83,7 @@ export class WorksComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.eventActiveModels=true;
+    this.eventActiveGames=true;
 
   }
 

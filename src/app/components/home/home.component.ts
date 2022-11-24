@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 @Input() toogle!:boolean;
-
+  inValidation:boolean=false;
   atributesLigth=true;
   atributesDark=false;
   generic=false;

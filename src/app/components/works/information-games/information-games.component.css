@@ -42,7 +42,8 @@ h4{
 .backGame{
     width: 11vw;
     height: 6vh;
-    background-color: #F8967A;
+    /* background-color: #F8967A; */
+    background: #5292C6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +55,7 @@ h4{
 }
 .backGame:hover{
     cursor: pointer;
-    background-color: #ff9b7f;
+    background-color: #4579a3;
 }
 
 .text_cards{
@@ -63,6 +64,7 @@ h4{
     text-align: left;
     color:#204058;
 }
+
 .text_cards2{
     font-size: 0.5em;
     margin-top: 1vh;
@@ -70,6 +72,7 @@ h4{
     width: 15vw;
     color:#204058;
     font-weight: 600;
+    
 }
 .text_cards3{
     font-size: 0.5em;
@@ -153,12 +156,17 @@ h4{
 }
 
 .three{
-    background: #f8957a5a;
+    /* background-color: #9a9a9a30; */
     position: absolute;
     left: 26%;
     z-index: 1;
     transform: rotate(10deg) translate(-5px, 7px);
     padding-left: 1vw;
+    background-image: url("./../../../../assets/png/texture-dialog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #ffffff88;
 }
 
 .move{
@@ -189,7 +197,11 @@ h4{
 }
 
 .changeContainerDark3{
-    background: #f8957ad4;
+    background-image: url("./../../../../assets/png/texture-dialog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #ffffffdd;
 }
 .changeContainerDark2{
     background: #e1f2ffbf;
