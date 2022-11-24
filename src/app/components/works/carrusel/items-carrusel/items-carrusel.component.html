@@ -1,7 +1,8 @@
 <div class="contenedor_animation">
 
-    <h4 class="titlePrincipal">Animaciones y modelados 3D en blender</h4>
-    <img class="icon-click" src="assets/png/click.png" alt="icon-click">
+    <h4 class="titlePrincipal" [ngClass]="{'titleModelingDark': responseTitle}">Animaciones y modelados 3D en blender</h4>
+    <img class="icon-click" src="assets/png/click.png" alt="icon-click" *ngIf="iconLigth" >
+    <img class="icon-click-two" src="assets/png/click-dos.png" alt="icon-click" *ngIf="iconDark">
         <div class="carrusel">
           <input type="radio" name="carrusel3d" id="radio1" checked (click)="viewModel('rad1')">
           <input type="radio" name="carrusel3d" id="radio2" (click)="viewModel('rad2')">
@@ -14,10 +15,10 @@
           <input type="radio" name="carrusel3d" id="radio9" (click)="viewModel('rad9')">
 
           <label for="radio1" id="img1">
-            <img class="item1" src="assets/png-models/chimuelo.png" >
+            <img class="item1" src="assets/png-models/chimuelo.png">
           </label>
           <label for="radio2" id="img2">
-            <img class="item2" src="assets/png-models/angel.png" >
+            <img class="item2" src="assets/png-models/angel.png">
           </label>
           <label for="radio3" id="img3">
             <img class="item3" src="assets/png-models/stich.png" >
@@ -49,5 +50,7 @@
           <span *ngIf="selectVideo" class="titleVideo">{{videoName}}</span>
        </div>
 
-         
+      <div class="before-footer">
+
+      </div>
       </div>

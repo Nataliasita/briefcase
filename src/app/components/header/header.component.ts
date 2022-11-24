@@ -32,10 +32,10 @@ export class HeaderComponent implements OnInit {
 
   fieldsChange(values:any):void {
     // console.log(values.currentTarget.checked);
-    let toogle= values.currentTarget.checked
-    this.messageEvent.emit(toogle)
+    this.toogle= values.currentTarget.checked
+    this.messageEvent.emit(this.toogle)
 
-    if(toogle===true){
+    if(this.toogle==true){
       this.generic=true;
       this.icon_dia=false;
       this.icon_noche=true;

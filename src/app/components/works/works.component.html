@@ -9,28 +9,36 @@
     </div>
     <div class="welcome" [ngClass]="{'color-text': generic}">
         <h1 class="title_general">Welcome | Bienvenue | <span id="title2"> 歡迎 | ようこそ </span> dear visitor</h1>
-        <h3 class="subtitle">Como apasionada por la tecnologia constantemente sigo aprendiendo nuevas herramientas buscando ofrecerle a los usuarios una experiencia accesible e innovadora dentro del mundo de los videojuegos y la transformación digital a traves de la creacion de productos. A continuación, encontraras algunos de mis proyectos los cuales fueron construidos con el motor de videojuegos multiplataforma Unity, modelado en 3D Blender, framework Angular y lenguajes de programacion como C# , Js, Ts, Html, Css.</h3>
+        <h3 class="subtitle">Como apasionada por la tecnologia constantemente sigo aprendiendo nuevas herramientas buscando ofrecerle a los usuarios una experiencia accesible e innovadora dentro del mundo de los videojuegos y la transformación digital a traves de la creacion de productos. A continuación, encontraras algunos de mis proyectos los cuales fueron construidos con el motor de videojuegos multiplataforma Unity, modelado en 3D Blender, framework Angular y lenguajes de programacion como c# , js, ts, html, css.</h3>
     </div>
 
     <div class="container_buttons">
-        <button type="button" class="subclassProduct" (click)="changeModelings()">Modelados 3D</button>
-        <button type="button" class="subclassProduct" (click)="changemyGames()">Juegos</button>
-        <button type="button" class="subclassProduct" (click)="changemoreProducts()">Mas productos</button>
+        <button type="button" class="subclassProduct" (click)="changeModelings()" [ngClass]="{'activeButton': eventActiveModels, 'changeDarkBtn': changeDarkBtn}">Modelados 3D</button>
+        <button type="button" class="subclassProduct" (click)="changemyGames()" [ngClass]="{'activeButton': eventActiveGames, 'changeDarkBtn': changeDarkBtn}">Juegos</button>
+        <button type="button" class="subclassProduct" (click)="changemoreProducts()" [ngClass]="{'activeButton': eventActiveMore, 'changeDarkBtn': changeDarkBtn}">Mas productos</button>
     </div>
 
     <div class="container_modelings" *ngIf="allModelings">
-        <app-items-carrusel ></app-items-carrusel>
+        <app-items-carrusel 
+        [responseTitle]="valueChangeTitle"
+        [iconLigth]="changeIconCarrusel1"
+        [iconDark]="changeIconCarrusel2" 
+        >
+        </app-items-carrusel>
 
     </div>
 
     <div class="container_games" *ngIf="allGames">
-       
-        <p>hola</p>
+        <app-information-games
+        [responseTitleDarkG]="valuegamesDarkTitle"
+        [responseDarkContainer2]="valuegamesDarkContainer2"
+        [responseDarkContainer3]="valuegamesDarkContainer3"
+        ></app-information-games>
     </div>
 
     <div class="container_allproyects" *ngIf="moreProducts">
         <figure class="proyect" *ngFor="let proyect of proyects" [ngClass]="{'gray_dark': generic3}">
-            <a class="prueba" href="{{proyect.href}}"><img class="img_proyect" src="{{proyect.image}}" alt=""></a>
+            <a class="prueba" href="{{proyect.href}}" target="_blank"><img class="img_proyect" src="{{proyect.image}}" alt=""></a>
             <div class="description_proyect">
                 <h5 class="proyect_title fw-bold">{{proyect.name}}</h5>
                 <p>{{proyect.description1}}</p>

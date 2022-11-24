@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   generic=false;
   generic2=false;
   author2=false;
+  author1=true;
   constructor() { 
   }
 
@@ -28,12 +29,14 @@ export class HomeComponent implements OnInit {
       this.generic=true;
       this.generic2=true;
       this.author2=true;
+      this.author1=false;
     }else{
       this.atributesLigth=true;
       this.atributesDark=false;
       this.generic=false;
       this.generic2=false;
       this.author2=false;
+      this.author1=true;
     }
 
   }

@@ -50,6 +50,14 @@
 	color: #ffffff;
 	font-family: game outline regular;
 	border-right: 5px solid #ffffff;
+	animation: writing 5s steps(16),
+			   visual 0.5s infinite	alternate;
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	width: 16ch;
+	font-size: 2.3em;
+	text-shadow: rgb(103, 194, 255) 0.05em 0.05em 0.05em;
 }
 
 @keyframes writing {

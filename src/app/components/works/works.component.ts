@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, ViewChildren, QueryList } from '@angular/core';
-import { ItemsCarruselComponent } from './carrusel/items-carrusel/items-carrusel.component';
+import { Component, OnInit, Input, Output , EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-works',
@@ -17,7 +17,16 @@ export class WorksComponent implements OnInit {
   moreProducts:boolean=false;
   allModelings:boolean=true;
   allGames:boolean=false;
-  
+  valueChangeTitle:boolean=false;
+  changeIconCarrusel1=true;
+  changeIconCarrusel2=false;
+  eventActiveModels:boolean=false;
+  eventActiveGames:boolean=false;
+  eventActiveMore:boolean=false;
+  valuegamesDarkTitle:boolean=false;
+  valuegamesDarkContainer2:boolean=false;
+  valuegamesDarkContainer3:boolean=false;
+  changeDarkBtn:boolean=false;
 
   proyects=[
     { id:1, name:'Points team Hexacta',
@@ -74,7 +83,7 @@ export class WorksComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.eventActiveModels=true;
 
   }
 
@@ -87,14 +96,27 @@ export class WorksComponent implements OnInit {
       this.generic2=true;
       this.generic3=true;
       this.generic4=true;
+      this.valueChangeTitle=true;
+      this.changeIconCarrusel1=false;
+      this.changeIconCarrusel2=true;
+      this.valuegamesDarkTitle=true;
+      this.valuegamesDarkContainer2=true;
+      this.valuegamesDarkContainer3=true;
+      this.changeDarkBtn=true;
     }else{
       this.atributesLigth=true;
       this.atributesDark=false;
+      this.valueChangeTitle=false;
       this.generic=false;
       this.generic2=false;
       this.generic3=false;
       this.generic4=false;
-
+      this.changeIconCarrusel1=true;
+      this.changeIconCarrusel2=false;
+      this.valuegamesDarkTitle=false;
+      this.valuegamesDarkContainer2=false;
+      this.valuegamesDarkContainer3=false;
+      this.changeDarkBtn=false;
     }
 
   }
@@ -106,28 +128,42 @@ export class WorksComponent implements OnInit {
     {
       this.allModelings=false;
       this.allGames=false;
+      if(this.eventActiveMore=true){
+        this.eventActiveGames=false;
+        this.eventActiveModels=false;
+      }
     }
   }
 
   changeModelings(){
     this.allModelings=true;
     window.scrollTo(0,1010)
-    if(this.allModelings==true)
-    {
-      this.allGames=false;
-      this.moreProducts=false;
-    }
+      if(this.allModelings==true)
+      {
+        this.allGames=false;
+        this.moreProducts=false;
+          if(this.eventActiveModels=true){
+            this.eventActiveGames=false;
+            this.eventActiveMore=false;
+          }
+      }
+     
   }
   changemyGames(){
     this.allGames=true;
     window.scrollTo(0,360)
 
-    if(this.allGames==true)
-    {
-      this.allModelings=false;
-      this.moreProducts=false;
-    }
+      if(this.allGames==true)
+      {
+        this.allModelings=false;
+        this.moreProducts=false;
+        if(this.eventActiveGames=true){
+          this.eventActiveModels=false;
+          this.eventActiveMore=false;
+        }
+      }
   }
+
 
 
 }

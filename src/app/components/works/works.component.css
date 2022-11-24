@@ -78,38 +78,56 @@
 }
 .container_buttons{
     position: absolute;
-    margin-top: 66vh;
+    margin-top: 68vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 0 15em 0 15em;
-    height: 12vh;
+    height: 15vh;
     align-items: center;
 }
 .subclassProduct{
-    width: 12vw;
+    width: 13vw;
     border-radius: 10px;
     height: 11vh;
-    background-color: rgb(0, 92, 142);
+    /* background-color: #5292C6; */
+    background-color: #33648b;
     color:#ffffff;
     border: none;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.subclassProduct:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-top: -2vh;
+    background: linear-gradient(0.1turn,#33648b,#5292C6, #33648b);
+}
+
+.activeButton{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-top: -4vh;
+    /* background: linear-gradient(0.1turn,#33648b, #5292C6 ); */
+    background: linear-gradient(0.1turn,#33648b,#5292C6, #33648b);
+}
+
+.changeDarkBtn{
+    background-color: #d1d1d1e9;
 }
 
 .container_games{
     width: 100vw;
     position: absolute;
     margin-top: 79vh;
-    background-color: brown;
-    height: fit-content;
-    padding: 5% 14%;
+    height:382vh;
+    /* padding: 5% 14%; */
+    /* background-color: #33648b; */
 }
 .container_modelings{
     width: 100vw;
     position: absolute;
     margin-top: 79vh;
     height: fit-content;
-    padding: 5% 12%;
+    padding: 5% 10%;
 }
 
 .container_allproyects{
@@ -118,7 +136,7 @@
     /* background-color: #174f7a; */
     /* background-color: #999b9c; */
     display: grid;
-    margin-top: 79vh;
+    margin-top: 86vh;
     z-index: 10;
     position: absolute;
     grid-template-columns: repeat(1, 1fr);
@@ -184,11 +202,10 @@ figure:nth-child(7){
     width: 22vw;
     height: 28vh;
     margin-left: 4vw;
-    
 }
 .description_proyect{
     width: 30vw;
-    font-size: 0.85em;
+    font-size: 0.9em;
     margin-left: 4vw;
     text-align: justify;
 }
@@ -205,7 +222,7 @@ p{
     font-weight: 550;
 }
 #tecnologies{
-    font-size: 0.85em;
+    font-size: 0.87em;
     font-style: oblique;
 }
 

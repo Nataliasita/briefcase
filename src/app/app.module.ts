@@ -16,6 +16,7 @@ import { SnowComponent } from './components/home/animation/snow/snow.component';
 import { AnimaligthComponent } from './components/works/animations_works/animaligth/animaligth.component';
 import { AnimationdarkComponent } from './components/works/animations_works/animationdark/animationdark.component';
 import { ItemsCarruselComponent } from './components/works/carrusel/items-carrusel/items-carrusel.component';
+import { InformationGamesComponent } from './components/works/information-games/information-games.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ItemsCarruselComponent } from './components/works/carrusel/items-carrus
     AnimaligthComponent,
     AnimationdarkComponent,
     ItemsCarruselComponent,
+    InformationGamesComponent,
   ],
   imports: [
     BrowserModule,

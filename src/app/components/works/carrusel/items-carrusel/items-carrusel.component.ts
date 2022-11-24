@@ -1,4 +1,4 @@
-import { Component, OnInit,Input, ViewChild } from '@angular/core';
+import { Component, OnInit,Input, ViewChild, Output } from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,9 @@ import { Component, OnInit,Input, ViewChild } from '@angular/core';
   styleUrls: ['./items-carrusel.component.css']
 })
 export class ItemsCarruselComponent implements OnInit {
+  @Input() responseTitle:Boolean=false;
+  @Input() iconLigth:Boolean=true;
+  @Input() iconDark:Boolean=false;
 
   informationModels=[
     {
@@ -71,16 +74,18 @@ export class ItemsCarruselComponent implements OnInit {
   viewModel(value:any){
     console.log(value,'eve')
     this.defaulVideo=false;
-
     this.informationModels.forEach(element => {
       if(element.name == value){
         this.selectVideo=true;
         this.imageVideo= element.image;
         this.videoName=element.title;
       }
-
+      
     });
   }
-  
- 
+
+  // responseDark(){
+  //   this.changeTitle=this.responseTitle;
+  // }
+
 }

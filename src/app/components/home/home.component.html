@@ -5,7 +5,8 @@
 
       <div class="name">
          <div class="containerName">
-            <span class="authorName" [ngClass]="{'name_title': author2}">Natalia Gonzalez</span>
+            <span class="authorName"*ngIf="author1">Natalia Gonzalez</span>
+            <span class="name_title" *ngIf="author2">Natalia Gonzalez</span>
          </div>
       </div>
          
@@ -21,7 +22,7 @@
                <img class="imgNata" src="./../../../assets/png/newphoto.jpg" alt="">
                   <img class="bt_home_2" src="./../../../assets/png/bt_home2.png" alt="">
                      <h3 class="author_dos" [ngClass]="{'color-text': generic}">Acerca de mi...</h3>
-                        <p class="description" [ngClass]="{'color-text': generic}">Game and Front End Developer, orientada a la resolución de problemas a través del diseño y construcción de productos digitales únicos, con formación profesional en Administración de empresas de la cual obtuve grandes aprendizajes gracias a la implementación de ideas de negocio desde cero. me gusta ver cada comienzo como una nueva oportunidad de crecimiento, me apasionan el aprendizaje constante, los nuevos retos en el área de la tecnología, la programación, el modelado 3D y AR.</p>
+                        <p class="description" [ngClass]="{'color-text': generic}">Game and Front End Developer, orientada a la resolución de problemas a través del diseño y construcción de productos digitales únicos, con formación profesional en Administración de empresas de la cual obtuve grandes aprendizajes gracias a la implementación de ideas de negocio desde cero. Visualizo cada comienzo como una nueva oportunidad de crecimiento, me apasionan los videojuegos, el aprendizaje constante, los nuevos retos en el área de tecnología, la programación, el modelado 3D y AR.</p>
                        
                         <div class="cv_containt">
                            <img class="qr" src="./../../../assets/png/qrcv.png" alt="">
