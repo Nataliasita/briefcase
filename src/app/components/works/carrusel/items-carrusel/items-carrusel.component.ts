@@ -50,7 +50,7 @@ export class ItemsCarruselComponent implements OnInit {
     {
       name:'rad8',
       title:'Jirlypuff - pokemon',
-      image:''
+      image:'./../../../assets/videos/girly.mp4'
     },
     {
       name:'rad9',

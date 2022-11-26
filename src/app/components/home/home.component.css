@@ -37,10 +37,10 @@
 	white-space: nowrap;
 	color:#5584AC;
 	border-right: 5px solid #5097d1;
-	width: 16ch;
+	width: 18ch;
 	font-size: 2.3em;
 	text-shadow: rgb(103, 194, 255) 0.05em 0.05em 0.05em;
-	animation: writing 5s steps(16),
+	animation: writing 5s steps(18),
 			   visual 0.5s infinite	alternate;
 	overflow: hidden;
 	font-family: game regular;
@@ -50,12 +50,12 @@
 	color: #ffffff;
 	font-family: game outline regular;
 	border-right: 5px solid #ffffff;
-	animation: writing 5s steps(16),
+	animation: writing 5s steps(19),
 			   visual 0.5s infinite	alternate;
 	overflow: hidden;
 	display: block;
 	white-space: nowrap;
-	width: 16ch;
+	width: 19ch;
 	font-size: 2.3em;
 	text-shadow: rgb(103, 194, 255) 0.05em 0.05em 0.05em;
 }
@@ -193,6 +193,7 @@
   }
   .qr{
 	  height: 18vh;
+	 opacity: 0.9;
   }
   .cv_containt{
 	  width: 30vw;

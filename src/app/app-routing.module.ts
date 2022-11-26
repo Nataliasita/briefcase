@@ -5,10 +5,10 @@ import { ContactComponent } from './components/contact/contact.component'
 import { WorksComponent } from './components/works/works.component'
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo:'/home'},
-  {path: 'home',pathMatch: 'full', component: HomeComponent},
-  {path: 'work',pathMatch: 'full', component: WorksComponent},
-  {path: 'contact',pathMatch: 'full', component: ContactComponent},
+  {path: '', component: HomeComponent },
+  {path: 'home', component: HomeComponent},
+  {path: 'work', component: WorksComponent},
+  {path: 'contact', component: ContactComponent},
   {path: '**'}
 ];
 
