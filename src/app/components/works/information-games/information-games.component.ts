@@ -20,6 +20,11 @@ export class InformationGamesComponent implements OnInit {
   lookThreeinformation4:boolean=false;
   lookTwoinformation5:boolean=false;
   lookThreeinformation5:boolean=false;
+  activeGameplay1:boolean=false;
+  activeGameplay2:boolean=false;
+  activeGameplay3:boolean=false;
+  activeGameplay4:boolean=false;
+  activeGameplay5:boolean=false;
 
   valueSelect:any;
 
@@ -82,6 +87,55 @@ export class InformationGamesComponent implements OnInit {
     }
     
     
+    
+  }
+
+  activeGameplay(value:any)
+  {
+    if(value==='game1')
+    {
+      this.activeGameplay1 = true;
+    }
+    else if(value==='game2')
+    {
+      this.activeGameplay2 = true;
+    }
+    else if(value==='game3')
+    {
+      this.activeGameplay3 = true;
+    }
+    else if(value==='game4')
+    {
+      this.activeGameplay4 = true;
+    }
+    else if(value==='game5')
+    {
+      this.activeGameplay5 = true;
+    }
+  }
+
+  closeactiveGameplay(value:any)
+  {
+    if(value ==='close1')
+    {
+      this.activeGameplay1 = false;
+    }
+    else if(value ==='close2')
+    {
+      this.activeGameplay2 = false;
+    }
+    else if(value ==='close3')
+    {
+      this.activeGameplay3 = false;
+    }
+    else if(value ==='close4')
+    {
+      this.activeGameplay4 = false;
+    }
+    else if(value ==='close5')
+    {
+      this.activeGameplay5 = false;
+    }
   }
   
 

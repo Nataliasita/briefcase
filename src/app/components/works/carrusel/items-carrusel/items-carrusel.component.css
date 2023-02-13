@@ -1,7 +1,6 @@
 .contenedor_animation{
-    /* background-color: rgb(230, 230, 230); */
     width: auto;
-    height: 360vh;
+    height: 260vh;
     display:flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -30,7 +29,7 @@
     transform: rotate(255deg);
     align-self: center;
     margin-top: 137vh;
-    margin-left: -26vw;
+    margin-left: -28vw;
     z-index: 7;
     border: 1px dashed #204058;
     padding: 0.3em;
@@ -80,16 +79,15 @@
 .carrusel img{
     position: absolute;
     transition: 0.4s;
-    border-radius: 20px;
-    height: 280px;
-    width: 280px;
+    border-radius: 220px;
+    height: 300px;
+    width: 300px;
+    padding: 1.5em;
     object-fit:contain;
 }
 
 .carrusel img:hover{
     cursor: pointer;
-    /* background: linear-gradient(#33648b, #e4e4e4 ); */
-    /* background: radial-gradient(#ebf8e1, #417eb0); */
     filter: drop-shadow(0 0 0.75rem #417eb0);
 }
 
@@ -110,11 +108,7 @@
 {
     transform: translate3d(0px,500px,500px);
     z-index: 5;
-    /* border: #204058 2px solid; */
     border: 10px solid transparent;
-    -moz-border-image: -moz-linear-gradient(left, #005C8E 0%, #3a4fd563 100%);
-    -webkit-border-image: -webkit-linear-gradient(left, #005C8E 0%, #3a4fd569 100%);
-    border-image: linear-gradient(to right, #005C8E 0%, #3a4fd55b 100%);
     border-image-slice: 1;
     cursor:default;
     background: radial-gradient(#ebf8e1, #417eb0);
@@ -202,7 +196,7 @@
 #radio7:checked ~ #img5 img,
 #radio8:checked ~ #img6 img,
 #radio9:checked ~ #img7 img{
-    transform: translate3d(220px,20px, 50px);
+    transform: translate3d(220px,0px, 50px);
     z-index: 2;
 } 
 #radio1:checked ~ #img9 img,
@@ -214,13 +208,13 @@
 #radio7:checked ~ #img6 img,
 #radio8:checked ~ #img7 img,
 #radio9:checked ~ #img8 img{
-    transform: translate3d(290px,-70px, 0px);
+    transform: translate3d(290px,-110px, 0px);
     z-index: 1;
 } 
 
 .item1{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background: linear-gradient(#ebf8e1, #6998ab);
+    background: linear-gradient(#ebf8e1, #d1d1d1);
 }
 .item2{
     background: linear-gradient(#ebf8e1, #d1d1d1);
@@ -228,7 +222,7 @@
 }
 .item3{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background: linear-gradient(#ebf8e1, #6998ab);
+    background: linear-gradient(#ebf8e1, #d1d1d1);
 }
 .item4{
     background: linear-gradient(#ebf8e1, #d1d1d1);
@@ -236,7 +230,7 @@
 }
 .item5{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background: linear-gradient(#ebf8e1, #6998ab);
+    background: linear-gradient(#ebf8e1, #d1d1d1);
 }
 .item6{
     background: linear-gradient(#ebf8e1, #d1d1d1);
@@ -244,7 +238,7 @@
 }
 .item7{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background: linear-gradient(#ebf8e1, #6998ab);
+    background: linear-gradient(#ebf8e1, #d1d1d1);
 }
 .item8{
     background: linear-gradient(#ebf8e1, #d1d1d1);
@@ -252,7 +246,7 @@
 }
 .item9{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background: linear-gradient(#ebf8e1, #6998ab);
+    background: linear-gradient(#ebf8e1, #d1d1d1);
 }
 
 .identicationImage{

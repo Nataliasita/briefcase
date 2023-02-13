@@ -13,7 +13,7 @@
     </div>
 
     <div class="container_buttons">
-        <button type="button" class="subclassProduct" (click)="changeModelings()" [ngClass]="{'activeButton': eventActiveModels, 'changeDarkBtn': changeDarkBtn}">Modelados 3D</button>
+        <button type="button" class="subclassProduct" (click)="changeModelings()" [ngClass]="{'activeButton': eventActiveModels, 'changeDarkBtn': changeDarkBtn}">Modelados y AR</button>
         <button type="button" class="subclassProduct" (click)="changemyGames()" [ngClass]="{'activeButton': eventActiveGames, 'changeDarkBtn': changeDarkBtn}">Juegos</button>
         <button type="button" class="subclassProduct" (click)="changemoreProducts()" [ngClass]="{'activeButton': eventActiveMore, 'changeDarkBtn': changeDarkBtn}">Mas productos</button>
     </div>
@@ -25,7 +25,7 @@
         [iconDark]="changeIconCarrusel2" 
         >
         </app-items-carrusel>
-
+        <app-ar></app-ar>
     </div>
 
     <div class="container_games" *ngIf="allGames">
@@ -44,7 +44,7 @@
                 <p>{{proyect.description1}}</p>
                 <p>{{proyect.description2}}</p>
                 <span id="tecnologies"> Tecnologias utilizadas: {{proyect.tecnologias}}</span>
-             </div>
+            </div>
         </figure>
     </div>
 </section>

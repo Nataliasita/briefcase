@@ -17,6 +17,7 @@ import { AnimaligthComponent } from './components/works/animations_works/animali
 import { AnimationdarkComponent } from './components/works/animations_works/animationdark/animationdark.component';
 import { ItemsCarruselComponent } from './components/works/carrusel/items-carrusel/items-carrusel.component';
 import { InformationGamesComponent } from './components/works/information-games/information-games.component';
+import { ArComponent } from './components/works/modulear/ar/ar.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { InformationGamesComponent } from './components/works/information-games/
     AnimationdarkComponent,
     ItemsCarruselComponent,
     InformationGamesComponent,
+    ArComponent,
   ],
   imports: [
     BrowserModule,

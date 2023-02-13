@@ -79,6 +79,7 @@ export class ItemsCarruselComponent implements OnInit {
         this.selectVideo=true;
         this.imageVideo= element.image;
         this.videoName=element.title;
+        window.scrollTo(0,1060);
       }
       
     });

@@ -2,105 +2,198 @@
         <div class="container-details-games" >
 
             <div class="container-basic">
-                <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">HuntersMoon</h4>
+                <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Jungle Keeper</h4>
                 <div class="general" >
                     <div class="card one" id="" (click)="actionsButtons('g1')">
-                        <img class="image-card" src="./../../../assets/png/portada-hunters.png" alt="">
+                        <img class="image-card" src="./../../../assets/png/portadaKeeper.png" alt="">
                     </div>
                     <div class="card three move" [ngClass]="{'action-three': lookThreeinformation, 'changeContainerDark3': responseDarkContainer3 }" >  
-                        <span class="text_cards"><strong>Reseña:</strong> HuntersMoon es un survival horror de aventura en tercera persona inspirado en los libros de cazadores de sombras. </span>
-                        <span class="text_cards2">Referentes: Dark soul, inside, COD:Zombies, Returnal</span>
+                        <span class="text_cards"><strong>Reseña:</strong> JungleKeeper es un juego de aventura en tercera persona situado en una selva tropical donde sus animales fueron poseídos por un ente maligno (chamán) quien se apoderó de una gema antigua para aumentar su poder. </span>
+                        <span class="text_cards2">Referentes: Subnautica, Biomutant, Tomb raider, Ark, Jurassic world </span>
                     </div>
                     <div class="card two move" [ngClass]="{'action-two': lookTwoinformation , 'changeContainerDark2': responseDarkContainer2 }">
-                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 3D, Género: Survival horror/Accion, Tercera persona, Plataforma:Pc, Windows , Modo de juego: Single player, Dev & Art : Sebastian Medina, Natalia Gonzalez, Andres piñeros</span>
+                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 3D, Género: Adventure/Accion, Tercera persona, Plataforma: Pc, Windows , Modo de juego: Single player, Dev & Art : Sebastian Medina, Natalia Gonzalez</span>
                         <span class="text_cards4">Tools: Unity, Blender</span>
+                        <span class="text_cards4">Proyecto graduación Generation</span>
+                    </div>
+                </div> 
+                <div class="additionalInfo">
+                    <a class="btnGithub btnAdd" href="https://github.com/Nataliasita/Keeper" target="_blank"><img class="imgAdd" src="./../../../assets/png/gith.png" alt=""> Github</a>
+                    <button class="btnPlay btnAdd" type="button" (click)="activeGameplay('game1')"><img class="imgAdd" src="./../../../assets/png/arrow.png" alt=""> Gameplay</button>
+                </div>
+                <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">You are the guardian, an ancient force possesses the natural resources to spread its evil and you are going to stop it.</span>
+                <a class="backGame" href="https://sakaine04.itch.io/jungle-keeper" target="_blank">Jugar ></a>
+
+                <span class="borderSection"></span>
+
+                <div class="gameContent" *ngIf="activeGameplay1">
+                        <div class="videoGame">
+                            <div class="titlesVideo">
+                                <span>GamePlay Jungle Keeper</span>
+                                <button class="btnVideoClose" type="button" (click)="closeactiveGameplay('close1')"><img class="imgClose" src="./../../../assets/png/closeVid.png" alt=""> </button>
+                            </div>
+                            
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/4Ab9kSPycGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
+
+            <div class="container-basic">
+                <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">HuntersMoon</h4>
+                <div class="general" >
+                    <div class="card one" (click)="actionsButtons('g2')">
+                        <img class="image-card" src="./../../../assets/png/portada-hunters.png" alt="">
+                    </div>
+                    <div class="card three move" [ngClass]="{'action-three': lookThreeinformation2, 'changeContainerDark3': responseDarkContainer3 }" >  
+                        <span class="text_cards"><strong>Reseña:</strong> HuntersMoon es un survival horror de aventura en tercera persona inspirado en los libros de cazadores de sombras.</span>
+                        <span class="text_cards2">Referentes: Dark soul, inside, COD:Zombies, Returnal</span>
+                    </div>
+                    <div class="card two move" [ngClass]="{'action-two': lookTwoinformation2 , 'changeContainerDark2': responseDarkContainer2 }" >
+                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 3D, Género: Survival horror/Accion, Tercera persona, Plataforma:Pc, Windows , Modo de juego: Single player, Dev & Art : Sebastian Medina, Natalia Gonzalez, Andres piñeros </span>
+                        <span class="text_cards4">Tools:Unity, Blender</span>
                         <span class="text_cards4">2 Jam Generation</span>
                     </div>
                 </div> 
-                <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">An angel travels to hell in search of the sacred arrow in order to defeat Asmodeus and end the war.</span>
-                <a class="backGame" href="https://daskalosjsm.itch.io/game-group-3" target="_blank">Jugar ></a>
-            </div>
-
-            <div class="container-basic">
-                <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">The Last Queen</h4>
-                <div class="general" >
-                    <div class="card one" (click)="actionsButtons('g2')">
-                        <img class="image-card" src="./../../../assets/png/portada-princess.png" alt="">
-                    </div>
-                    <div class="card three move" [ngClass]="{'action-three': lookThreeinformation2, 'changeContainerDark3': responseDarkContainer3 }" >  
-                        <span class="text_cards"><strong>Reseña:</strong> The last queen es un juego arcade de aventura en tercera persona en el jugador realiza un salto en el tiempo para salvar al reino.</span>
-                        <span class="text_cards2">Referentes: Shovel Knight, Bloodstained: Ritual of the Night </span>
-                    </div>
-                    <div class="card two move" [ngClass]="{'action-two': lookTwoinformation2 , 'changeContainerDark2': responseDarkContainer2 }" >
-                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 2.5D, Género: Aventura/Accion, Tercera persona, Plataforma: Browser , Modo de juego: Single player, Dev & Art :  Natalia Gonzalez, Christian Ruales, Juan Salgado </span>
-                        <span class="text_cards4">Tools:Unity, Blender</span>
-                        <span class="text_cards4">1 Jam Generation</span>
-                    </div>
-                </div> 
+                <div class="additionalInfo">
+                    <a class="btnGithub btnAdd" href="https://github.com/Nataliasita/Huntersmoon" target="_blank"><img class="imgAdd" src="./../../../assets/png/gith.png" alt=""> Github</a>
+                    <button class="btnPlay btnAdd" type="button" (click)="activeGameplay('game2')"><img class="imgAdd" src="./../../../assets/png/arrow.png" alt=""> Gameplay</button>
+                </div>
                 <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Go through the past with wisdom and you will be able to change the future of your kingdom</span>
-                <a class="backGame" href="https://sakaine04.itch.io/the-last-queen" target="_blank">Jugar ></a>
+                <a class="backGame" href="https://daskalosjsm.itch.io/huntersmoon" target="_blank">Jugar ></a>
+
+                <span class="borderSection"></span>
+
+                <div class="gameContent" *ngIf="activeGameplay2">
+                    <div class="videoGame">
+                        <div class="titlesVideo">
+                            <span>GamePlay HuntersMoon</span>
+                            <button class="btnVideoClose" type="button" (click)="closeactiveGameplay('close2')"><img class="imgClose" src="./../../../assets/png/closeVid.png" alt=""> </button>
+                        </div>
+                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6R04noEci2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
 
             <div class="container-basic">
-                <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">DinoRules</h4>
+                <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">MeoWWizard</h4>
                 <div class="general" >
                     <div class="card one" (click)="actionsButtons('g3')">
-                        <img class="image-card" src="./../../../assets/png/portada-dinorules.png" alt="">
+                        <img class="image-card" src="./../../../assets/png/portadacat.png" alt="">
                     </div>
                     <div class="card three move" [ngClass]="{'action-three': lookThreeinformation3, 'changeContainerDark3': responseDarkContainer3 }" >  
-                        <span class="text_cards"><strong>Reseña: </strong> DinoRules es un juego de aventura donde recorrerás todo un mundo desconocido rompiendo las dinoreglas y así rescatar a tus rasgos de personalidad que te hacen único.  </span>
-                        <span class="text_cards2">Referentes: Jurassic World Warparty </span>
+                        <span class="text_cards"><strong>Reseña: </strong> MeoWWizard es un juego RPG (juego de roles) donde eres el último mago y el reino enemigo ha tomado prisionera a tu reina. Usarás tus habilidades mágicas viajando un largo camino enfrentándote a enemigos en la batalla para salvarla.</span>
+                        <span class="text_cards2">Referentes: Dragon Age, Dark souls, The witcher  </span>
                     </div>
                     <div class="card two move" [ngClass]="{'action-two': lookTwoinformation3 , 'changeContainerDark2': responseDarkContainer2 }">
-                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 3D, Género: Aventura/Estrategia, Tercera persona, Plataforma: Browser , Modo de juego: Single player, Dev & Art : Natalia Gonzalez </span>
+                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 3D, Género: RPG, Tercera persona, Plataforma: Browser , Modo de juego: Single player, Dev & Art : Natalia Gonzalez </span>
                         <span class="text_cards4">Tools: Unity, Blender</span>
-                        <span class="text_cards4">Women Game Jam 2022</span>
+                        <span class="text_cards4">3 Jam Generation</span>
                     </div>
                 </div> 
-                <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Rompe las reglas para vencer tus miedos</span>
-                <a class="backGame" href="https://sakaine04.itch.io/dinorules" target="_blank">Jugar ></a>
+
+                <div class="additionalInfo">
+                    <a class="btnGithub btnAdd" href="https://github.com/Nataliasita/BattleMagic" target="_blank"><img class="imgAdd" src="./../../../assets/png/gith.png" alt=""> Github</a>
+                    <button class="btnPlay btnAdd" type="button" (click)="activeGameplay('game3')"><img class="imgAdd" src="./../../../assets/png/arrow.png" alt=""> Gameplay</button>
+                </div>
+
+                <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">MeoWWizard use your magical abilities to win in battle.</span>
+                <a class="backGame" href="https://sakaine04.itch.io/meowwizard" target="_blank">Jugar ></a>
+                
+                <span class="borderSection"></span>
+
+                <div class="gameContent" *ngIf="activeGameplay3">
+                    <div class="videoGame">
+                        <div class="titlesVideo">
+                            <span>GamePlay MeoWWizard</span>
+                            <button class="btnVideoClose" type="button" (click)="closeactiveGameplay('close3')"><img class="imgClose" src="./../../../assets/png/closeVid.png" alt=""> </button>
+                        </div>
+                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aGaXA5ef6lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="container-basic">
+                <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Jade</h4>
+                <div class="general" >
+                    <div class="card one" (click)="actionsButtons('g4')">
+                        <img class="image-card" src="./../../../assets/png/jadePortada.png" alt="">
+                    </div>
+                    <div class="card three move" [ngClass]="{'action-three': lookThreeinformation4, 'changeContainerDark3': responseDarkContainer3 }" >  
+                        <span class="text_cards"><strong>Reseña: </strong>Jade es survival horror de aventura en tercera persona donde eres el fiel conejo de jade de la diosa Chang'e en el Palacio de la Luna, un espíritu maligno te atrapó y te trajo a la tierra. Tienes enfrentar los peligros para reunir el elixir que restaurará tus poderes y regresar a tu hogar.  </span>
+                        <span class="text_cards2">Referentes: Fantasy Westward Journey, Dragon Chronicles, Asura </span>
+                    </div>
+                    <div class="card two move" [ngClass]="{'action-two': lookTwoinformation4 , 'changeContainerDark2': responseDarkContainer2 }" >
+                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 3D, Género: Aventura/Estrategia, Primera persona, Plataforma: Browser , Modo de juego: Single player  Dev & Art : Natalia Gonzalez</span>
+                        <span class="text_cards4">Tools: Unity, Blender </span>
+                        <span class="text_cards4">Global Game Jam 2023</span>
+                    </div>
+                    
+                </div> 
+
+                <div class="additionalInfo">
+                    <a class="btnGithub btnAdd changeGitColor"></a>
+                    <button class="btnPlay btnAdd" type="button" (click)="activeGameplay('game4')"><img class="imgAdd" src="./../../../assets/png/arrow.png" alt=""> Gameplay</button>
+                </div>
+
+                <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Get out of the prision with this awesome power!</span>
+                <a class="backGame" href="https://sakaine04.itch.io/jade" target="_blank">Jugar ></a>
+                
+                <span class="borderSection"></span>
+
+                <div class="gameContent" *ngIf="activeGameplay4">
+                    <div class="videoGame">
+                        <div class="titlesVideo">
+                            <span>GamePlay Jade</span>
+                            <button class="btnVideoClose" type="button" (click)="closeactiveGameplay('close4')"><img class="imgClose" src="./../../../assets/png/closeVid.png" alt=""> </button>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YSzbs_oVN3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            
             </div>
 
             <div class="container-basic">
                 <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">DualPrison</h4>
                 <div class="general" >
-                    <div class="card one" (click)="actionsButtons('g4')">
+                    <div class="card one" (click)="actionsButtons('g5')">
                         <img class="image-card" src="./../../../assets/png/dual2.png" alt="">
                     </div>
-                    <div class="card three move" [ngClass]="{'action-three': lookThreeinformation4, 'changeContainerDark3': responseDarkContainer3 }" >  
-                        <span class="text_cards"><strong>Reseña: </strong>DualPrison es un juego de aventura/estrategia donde puedes esquivar obstaculos en el Presente, teletransportarte al Futuro, y viceverza para salir de una prison.   </span>
-                        <span class="text_cards2">Referentes: Day of the Tentacle, Prince of Persia: The Sands of Time </span>
-                    </div>
-                    <div class="card two move" [ngClass]="{'action-two': lookTwoinformation4 , 'changeContainerDark2': responseDarkContainer2 }" >
-                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 3D, Género: Aventura/Estrategia, Primera persona, Plataforma: Browser , Modo de juego: Single player Dev: Alejandro Pérez Art2D: Natalia Gonzalez Art3D: David Poveda</span>
-                        <span class="text_cards4">Tools: Unity, Blender, PixelArt </span>
-                        <span class="text_cards4">Globant Game Jam</span>
-                    </div>
-                </div> 
-                <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Get out of the prision with this awesome power!</span>
-                <a class="backGame" href="https://sakaine04.itch.io/dual-prison" target="_blank">Jugar ></a>
-            </div>
-
-            <div class="container-basic">
-                <h4 [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Byte Adventure Flavored</h4>
-                <div class="general" >
-                    <div class="card one" (click)="actionsButtons('g5')">
-                        <img class="image-card" src="./../../../assets/png/bite_of.png" alt="">
-                    </div>
                     <div class="card three move" [ngClass]="{'action-three': lookThreeinformation5, 'changeContainerDark3': responseDarkContainer3 }" >  
-                        <span class="text_cards"><strong>Reseña:</strong> Byte Adventure un juego de aventura/Arcade donde recorreras los diferentes niveles recogiendo las notas de sabor que te ayudaran a cumplir la misión y te daran habilidades. </span>
-                        <span class="text_cards2">Referentes: Space Invaders, Arkanoid</span>
+                        <span class="text_cards"><strong>Reseña:</strong> DualPrison es un juego de aventura/estrategia donde puedes esquivar obstaculos en el Presente, teletransportarte al Futuro, y viceverza para salir de una prison. </span>
+                        <span class="text_cards2">Referentes: Day of the Tentacle, Prince of Persia: The Sands of Time</span>
                     </div>
                     <div class="card two move" [ngClass]="{'action-two': lookTwoinformation5, 'changeContainerDark2': responseDarkContainer2 }" >
-                        <span class="text_cards3"><strong>Caracteristicas:</strong> Videojuego 3D, Género: Aventura/Arcade, Tercera persona, Plataforma: Browser , Modo de juego: Single player, Dev & Art : Natalia Gonzalez</span>
+                        <span class="text_cards3"><strong>Caracteristicas:</strong>  Videojuego 3D, Género: Aventura/Estrategia, Primera persona, Plataforma: Browser , Modo de juego: Single player Dev: Alejandro Pérez Art2D: Natalia Gonzalez Art3D: David Poveda</span>
                         <span class="text_cards4">Tools: Unity, Blender</span>
-                        <span class="text_cards4">Pixel Game Jam</span>
+                        <span class="text_cards4">Global Game Jam 2022</span>
                     </div>
                 </div> 
-                <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Reúne las notas de sabor para ganar habilidades byte</span>
-                <a class="backGame" href="https://sakaine04.itch.io/byte-adventure-flavored" target="_blank">Jugar ></a>
+
+                <div class="additionalInfo">
+                    <a class="btnGithub btnAdd changeGitColor"></a>
+                    <button class="btnPlay btnAdd" type="button" (click)="activeGameplay('game5')"><img class="imgAdd" src="./../../../assets/png/arrow.png" alt=""> Gameplay</button>
+                </div>
+
+                <span class="resume" [ngClass]="{'changeDarkTitle': responseTitleDarkG}">Get out of the prision with this awesome power!</span>
+                <a class="backGame" href="https://sakaine04.itch.io/dual-prison" target="_blank">Jugar ></a>
+
+                <div class="gameContent" *ngIf="activeGameplay5">
+                    <div class="videoGame">
+                        <div class="titlesVideo">
+                            <span>GamePlay DualPrison</span>
+                            <button class="btnVideoClose" type="button" (click)="closeactiveGameplay('close5')"><img class="imgClose" src="./../../../assets/png/closeVid.png" alt=""> </button>
+                        </div>
+                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vYJblPsviX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
             </div>
         </div>
+
     
 </section>
 

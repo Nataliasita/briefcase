@@ -1,8 +1,7 @@
 .container_works{
     width: 100%;
-    height: 460vh;
+    height: 505vh;
     display: flex;
-    
 }
 .title_proyect{
     width: 600px;
@@ -125,7 +124,7 @@
 .container_modelings{
     width: 100vw;
     position: absolute;
-    margin-top: 79vh;
+    margin-top: 88vh;
     height: fit-content;
     padding: 5% 10%;
 }
